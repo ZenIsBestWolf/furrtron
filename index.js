@@ -8,7 +8,7 @@ var token = process.env.TOKEN
 //Startup
 client.on('ready', () => {
   console.log('Online and ready to go! Bot running with prefix ' + prefix);
-  client.user.setActivity('beep boop bop.');
+  client.user.setActivity('beep boop bop. | Prefix is !');
 });
 //Variables
 var prefix = "!";
