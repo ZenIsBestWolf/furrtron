@@ -13,7 +13,6 @@ client.on('ready', () => {
 //Variables
 var prefix = "!";
 var zen = "183672121522782208";
-var curGuild = "423992378941243402";
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   if (message.author.bot) return;
