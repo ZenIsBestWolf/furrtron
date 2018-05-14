@@ -1,0 +1,134 @@
+{
+	"amphibians": {
+		"displayname": "Amphibians",
+		"description": "For those whose sonas are Amphibians."
+	},
+	"aquatic": {
+		"displayname": "Aquatic",
+		"description": "For those whose sonas are Aquatic."
+	},
+	"artist": {
+		"displayname": "Artist",
+		"description": "For the artists."
+	},
+	"asexual": {
+		"displayname": "Asexual",
+		"description": "For those who identify as Asexual/Ace."
+	},
+	"avians": {
+		"displayname": "Avians",
+		"description": "For those whose sonas are Avians (basically birds)."
+	},
+	"bisexual": {
+		"displayname": "Bisexual",
+		"description": "For those who identify as Bisexual."
+	},
+	"canines": {
+		"displayname": "Canines",
+		"description": "For those whose sonas are Canines."
+	},
+	"cervines": {
+		"displayname": "Cervines",
+		"description": "For those whose sonas are Cervines (deers and creatures with antlers)."
+	},
+	"dragons": {
+		"displayname": "Dragons",
+		"description": "For those with Dragon sonas."
+	},
+	"equines": {
+		"displayname": "Equines",
+		"description": "For those whose sonas are Equines (horses and hooved creatures)."
+	},
+	"felines": {
+		"displayname": "Felines",
+		"description": "For those whose sonas are Felines."
+	},
+	"females": {
+		"displayname": "Females",
+		"description": "For those who identify as Female."
+	},
+	"furries": {
+		"displayname": "Furries",
+		"description": "For those who identify as a Furry."
+	},
+	"non-furries": {
+		"displayname": "Non-Furries",
+		"description": "For those who don't identify as a furry, but support furries."
+	},
+	"gay": {
+		"displayname": "Gay",
+		"description": "For those who identify as Gay."
+	},
+	"hybrids": {
+		"displayname": "Hybrids",
+		"description": "For those whose sonas are a Hybrid of two species."
+	},
+	"lagomorphs": {
+		"displayname": "Lagomorphs",
+		"description": "For those whose sonas are Lagomorphs (rabbit likes creatures)."
+	},
+	"lesbian": {
+		"displayname": "Lesbian",
+		"description": "For those who identify as Lesbian."
+	},
+	"male": {
+		"displayname": "Male",
+		"description": "For those who identify as Male."
+	},
+	"marsupials": {
+		"displayname": "Marsupials",
+		"description": "For those whose sonas are Marsupials (kangaroo like creatures)."
+	},
+	"multiple Sonas": {
+		"displayname": "Multiple Sonas",
+		"description": "For those who have multiple sonas (fursonas)."
+	},
+	"mustelids": {
+		"displayname": "Mustelids",
+		"description": "For those whose sonas are Mustelids (weasels, badgers, otters and other creatures alike)."
+	},
+	"mythical": {
+		"displayname": "Mythical",
+		"description": "For those whose sona species are mythical (not real)."
+	},
+	"nsfw": {
+		"displayname": "NSFW",
+		"description": "Access to the 18+ channels."
+	},
+	"pokefurs": {
+		"displayname": "Pokefurs",
+		"description": "For those whose sonas are based off of characters from the Pokémon franchise."
+	},
+	"procyonids": {
+		"displayname": "Procyonids",
+		"description": "For those whose sonas are Procyonids (racoon like creatures)."
+	},
+	"reptiles": {
+		"displayname": "Reptiles",
+		"description": "For those whose sonas are Reptiles."
+	},
+	"rodents": {
+		"displayname": "Rodents",
+		"description": "For those whose sonas are Rodents."
+	},
+	"sergals": {
+		"displayname": "Sergals",
+		"description": "For those with Sergal sonas."
+	},
+	"straight": {
+		"displayname": "Straight",
+		"description": "For those who identify as Straight."
+	},
+	"transgender": {
+		"displayname": "Transgender",
+		"description": "For those who identify as Transgender."
+	},
+	"vulpines": {
+		"displayname": "Vulpines",
+		"description": "For those whose sonas are Vulpines (fox like creatures)."
+	},
+	"wolves": {
+		"displayname": "Wolves",
+		"description": "For those with Wolf sonas."
+	}
+}
