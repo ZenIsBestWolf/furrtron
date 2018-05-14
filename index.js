@@ -10,6 +10,7 @@ client.on('ready', () => {
   console.log('Online and ready to go! Bot running with prefix ' + prefix);
   client.user.setActivity('beep boop bop. | Prefix is !');
 });
+process.on('unhandledRejection', console.error);
 //Variables
 var prefix = "!";
 var zen = "183672121522782208";
@@ -25,7 +26,29 @@ client.on('message', message => {
     }, 10000));
     return;
   };
+  var userPermLevel = 0
+  if (message.author.roles.exists("name", "| • Trial Moderator • |") || message.author.roles.exists("name", "| • Moderator • |") || message.author.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
+  if (message.author.roles.exists("name", "| • Mayor • |") || message.author.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
+  if (message.author.id === zen) userPermLevel = 3
   switch (args[0].toLowerCase()) {
+    case "about":
+      var aboutBotEmbed = new Discord.RichEmbed().setTitle("About Furrtron").setDescription("A bot for Furrmont.").addField("Prefix","The prefix is ``" + prefix + "``.").addField("Number of Commands", "There are ``" + Object.values(commandList).length + "`` commands.").addField("Developer", "The developer is ZenIsBestWolf#0446.").addField("GitHub", "Want to contribute to Furrtron or see its code? Head here: https://github.com/ZenIsBestWolf/furrtron.").setColor(0x876021)
+      message.channel.send(aboutBotEmbed)
+      break;
+    case "chat":
+      if (userPermLevel < 3) {
+        message.reply("You cannot use this command! This command is Level 3. You are Level " + userPermLevel + ".").then(e => setTimeout(function() {
+          if (message.channel.type === "text") {
+            e.delete();
+            message.delete();
+          };
+        }, 10000));
+        return;
+      };
+      var msg = args.join(' ').slice(args[0].length + args[1].length + 1)
+      message.channel.send(msg);
+      if (message.channel.type === "text") message.delete();
+      break;
     case "help":
       if (args[1]) {
         var lookupCommand = commandList[args[1].toLowerCase()]
@@ -41,8 +64,8 @@ client.on('message', message => {
         var permissionName = ""
         if (lookupCommand.permission === 0) permissionName = "Everyone"
         if (lookupCommand.permission === 1) permissionName = "Staff"
-        if (lookupCommand.permission === 2) permissionName = "Jim (Server Owner)"
-        if (lookupCommand.permission === 3) permissionName = "Zen (Bot Owner)"
+        if (lookupCommand.permission === 2) permissionName = "Mayors"
+        if (lookupCommand.permission === 3) permissionName = "Zen"
         var usageEmbed = new Discord.RichEmbed().setTitle('Information on command ``' + prefix + args[1].toLowerCase() + '``.').addField('Name', args[1].toLowerCase()).addField('Description', lookupCommand.description).addField('Usage', lookupCommand.usage).addField('Permission Level', permissionName)
         message.author.send(usageEmbed)
         if (message.channel.type === "text") message.delete();
