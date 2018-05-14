@@ -1,6 +1,6 @@
 {
   "help": {
-    "description": "Shows a list of all the commands. You can also get specific information on one command by adding it's name. (Ex. ``!help role``)",
+    "description": "Shows a list of all the commands. You can also get specific information on one command by adding it's name. (Ex. ``.help role``)",
     "usage": "help (command)",
     "permission": 0
   },
