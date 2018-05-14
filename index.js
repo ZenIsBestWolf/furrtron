@@ -4,12 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const roleList = require("./roles.json");
 const commandList = require("./commandlist.json")
-var token = ""
-//Check for an invalid token (because I might forget to put it in.)
-if (token === "") {
-  console.error("Error: No token provided! Cannot login!");
-  process.exit()
-};
+var token = process.env.TOKEN
 //Startup
 client.on('ready', () => {
   console.log('Online and ready to go! Bot running with prefix ' + prefix);
