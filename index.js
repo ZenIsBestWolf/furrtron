@@ -20,12 +20,7 @@ client.on('message', message => {
   var args = message.content.substring(prefix.length).split(" ");
   var command = commandList[args[0].toLowerCase()];
   //Check if the command exists.
-  if (command === undefined) {
-    message.reply("That's not a valid command!").then(e => setTimeout(function() {
-      if (message.channel.type === "text") e.delete();
-    }, 10000));
-    return;
-  };
+  if (command === undefined) return;
   var userPermLevel = 0
   //if (message.author.roles.exists("name", "| • Trial Moderator • |") || message.author.roles.exists("name", "| • Moderator • |") || message.author.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
   //if (message.author.roles.exists("name", "| • Mayor • |") || message.author.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
