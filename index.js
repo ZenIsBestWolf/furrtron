@@ -45,7 +45,7 @@ client.on('message', message => {
         }, 10000));
         return;
       };
-      var msg = args.join(' ').slice(args[0].length + args[1].length + 1)
+      var msg = args.join(' ').slice(args[0].length)
       message.channel.send(msg);
       if (message.channel.type === "text") message.delete();
       break;
