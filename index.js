@@ -27,8 +27,8 @@ client.on('message', message => {
     return;
   };
   var userPermLevel = 0
-  if (message.author.roles.exists("name", "| • Trial Moderator • |") || message.author.roles.exists("name", "| • Moderator • |") || message.author.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
-  if (message.author.roles.exists("name", "| • Mayor • |") || message.author.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
+  //if (message.author.roles.exists("name", "| • Trial Moderator • |") || message.author.roles.exists("name", "| • Moderator • |") || message.author.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
+  //if (message.author.roles.exists("name", "| • Mayor • |") || message.author.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
   if (message.author.id === zen) userPermLevel = 3
   switch (args[0].toLowerCase()) {
     case "about":
