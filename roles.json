@@ -47,6 +47,10 @@
 		"displayname": "Females",
 		"description": "For those who identify as Female."
 	},
+	"femboy": {
+		"displayname": "Femboy",
+		"description": "Males who are more effimate."
+	},
 	"furries": {
 		"displayname": "Furries",
 		"description": "For those who identify as a Furry."
