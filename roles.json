@@ -127,6 +127,10 @@
 		"displayname": "Transgender",
 		"description": "For those who identify as Transgender."
 	},
+	"ursines": {
+		"displayname": "Ursines",
+		"description": "For those whose sonas are Ursines (bear like creatures)."
+	},
 	"vulpines": {
 		"displayname": "Vulpines",
 		"description": "For those whose sonas are Vulpines (fox like creatures)."
