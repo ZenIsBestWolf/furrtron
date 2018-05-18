@@ -22,8 +22,8 @@ client.on('message', message => {
   //Check if the command exists.
   if (command === undefined) return;
   var userPermLevel = 0
-  //if (message.author.roles.exists("name", "| • Trial Moderator • |") || message.author.roles.exists("name", "| • Moderator • |") || message.author.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
-  //if (message.author.roles.exists("name", "| • Mayor • |") || message.author.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
+  if (message.member.roles.exists("name", "| • Trial Moderator • |") || message.member.roles.exists("name", "| • Moderator • |") || message.member.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
+  if (message.member.roles.exists("name", "| • Mayor • |") || message.member.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
   if (message.author.id === zen) userPermLevel = 3
   switch (args[0].toLowerCase()) {
     case "about":
