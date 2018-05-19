@@ -19,6 +19,10 @@
 		"displayname": "Avians",
 		"description": "For those whose sonas are Avians (basically birds)."
 	},
+	"bovines": {
+		"displayname": "Bovines",
+		"description": "For thos ewhose sonas are Bovines (cow and bull like creatures)."
+	},
 	"bisexual": {
 		"displayname": "Bisexual",
 		"description": "For those who identify as Bisexual."
