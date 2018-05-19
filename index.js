@@ -29,7 +29,8 @@ client.on('message', message => {
     message.reply("Bot commands are disabled here.").then(e => setTimeout(function() {
       e.delete();
       message.delete();
-    }, 10000))
+    }, 10000));
+    return;
   };
   switch (args[0].toLowerCase()) {
     case "about":
