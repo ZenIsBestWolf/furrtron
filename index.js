@@ -25,6 +25,12 @@ client.on('message', message => {
   if (message.member.roles.exists("name", "| • Trial Moderator • |") || message.member.roles.exists("name", "| • Moderator • |") || message.member.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
   if (message.member.roles.exists("name", "| • Mayor • |") || message.member.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
   if (message.author.id === zen) userPermLevel = 3
+  if (message.channel.id === "424197586879250444") {
+    message.reply("Bot commands are disabled here.").then(e => setTimeout(function() {
+      e.delete();
+      message.delete();
+    }, 10000))
+  };
   switch (args[0].toLowerCase()) {
     case "about":
       var aboutBotEmbed = new Discord.RichEmbed().setTitle("About Furrtron").setDescription("A bot for Furrmont.").addField("Prefix","The prefix is ``" + prefix + "``.").addField("Number of Commands", "There are ``" + Object.values(commandList).length + "`` commands.").addField("Developer", "The developer is ZenIsBestWolf#0446.").addField("GitHub", "Want to contribute to Furrtron or see its code? Head here: https://github.com/ZenIsBestWolf/furrtron.").setColor(0x876021)
