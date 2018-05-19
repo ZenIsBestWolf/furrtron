@@ -10,8 +10,8 @@
     "permission": 3
   },
   "help": {
-    "description": "Shows a list of all the commands. You can also get specific information on one command by adding it's name. (Ex. ``.help role``)",
-    "usage": "help (command)",
+    "description": "Shows a list of all the commands. You can also get specific information on one command by adding its name. (Ex. ``.help role``)",
+    "usage": "help [command]",
     "permission": 0
   },
   "role": {

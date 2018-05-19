@@ -155,7 +155,11 @@ client.on('message', message => {
       };
     };
     for (i = 0; i < rolePages; i++) {
-      message.author.send(roleEmbed[i + 1])
+      if (message.channel.id === "424020950837886998") {
+        message.channel.send(roleEmbed[i + 1])
+      } else {
+        message.author.send(roleEmbed[i + 1])
+      };
     };
     if (message.channel.type === "text") message.delete();
       break;
