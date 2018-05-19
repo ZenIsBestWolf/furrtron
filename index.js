@@ -116,7 +116,7 @@ client.on('message', message => {
       };
       var calledRole = roleList[args[1].toLowerCase()]
       if (args[1].toLowerCase() === "multiple" && args[2]) {
-        if (args[2].toLowerCase() === "sonas") calledRole = "multiple sonas"
+        if (args[2].toLowerCase() === "sonas") calledRole = roleList["multiple sonas"]
       };
       if (calledRole === undefined) {
         message.reply("There is no existing assignable role under that name.").then(e => setTimeout(function() {
