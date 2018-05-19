@@ -79,6 +79,10 @@
 		"displayname": "Lesbian",
 		"description": "For those who identify as Lesbian."
 	},
+	"lynx": {
+		"displayname": "Lynx",
+		"description": "For those with Lynx sonas."
+	},
 	"male": {
 		"displayname": "Male",
 		"description": "For those who identify as Male."
