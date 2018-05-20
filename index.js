@@ -106,6 +106,11 @@ client.on('message', message => {
       };
       message.delete();
       break;
+    case "modmail":
+      var mailMsg = args.join(' ').slice(args[0].length)
+      var newMessageEmbed = new Discord.RichEmbed().setAuthor("Message from " + message.author.tag + ".", message.author.avatarURL).setDescription(mailMsg).setColor(0x25fc6d)
+      message.channel.guild.channels.get("447760291757817857").send(newMessageEmbed)
+      break;
     case "role":
       if (message.channel.type !== "text") {
         message.reply("This command is not valid in DMs.")
