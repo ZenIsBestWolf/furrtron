@@ -1,4 +1,9 @@
 {
+  "8ball": {
+    "description": "Give it a question, and it answers!",
+    "usage": "8ball [question]",
+    "permission": 0
+  },
   "about": {
     "description": "Gives information about Furrtron.",
     "usage": "about",

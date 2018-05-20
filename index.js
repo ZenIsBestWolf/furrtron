@@ -33,6 +33,10 @@ client.on('message', message => {
     return;
   };
   switch (args[0].toLowerCase()) {
+    case "8ball":
+      var ballResponses = ["Yes","No","Maybe","I\'m not sure.","I\'m sure.","Probably.","Probably not.","Absolutely.","Absolutely not.", "No way."]
+      message.reply("**:8ball: says...** " + ballResponses[Math.floor(Math.random() * ballResponses.length)]);
+      break;
     case "about":
       var aboutBotEmbed = new Discord.RichEmbed().setTitle("About Furrtron").setDescription("A bot for Furrmont.").addField("Prefix","The prefix is ``" + prefix + "``.").addField("Number of Commands", "There are ``" + Object.values(commandList).length + "`` commands.").addField("Developer", "The developer is ZenIsBestWolf#0446.").addField("GitHub", "Want to contribute to Furrtron or see its code? Head here: https://github.com/ZenIsBestWolf/furrtron.").setColor(0x876021)
       message.channel.send(aboutBotEmbed)
