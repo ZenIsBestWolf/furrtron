@@ -110,6 +110,10 @@ client.on('message', message => {
       var mailMsg = args.join(' ').slice(args[0].length)
       var newMessageEmbed = new Discord.RichEmbed().setAuthor("Message from " + message.author.tag + ".", message.author.avatarURL).setDescription(mailMsg).setColor(0x25fc6d)
       message.channel.guild.channels.get("447760291757817857").send(newMessageEmbed)
+      message.reply("Message sent. Keep your DMs open!").then(e => setTimeout(function() {
+        message.delete();
+        e.delete();
+      }, 10000));
       break;
     case "role":
       if (message.channel.type !== "text") {
