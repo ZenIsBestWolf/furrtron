@@ -127,9 +127,17 @@
 		"displayname": "Sergals",
 		"description": "For those with Sergal sonas."
 	},
+	"single": {
+		"displayname": "Single",
+		"description": "For those who are not in a relationship."
+	},
 	"straight": {
 		"displayname": "Straight",
 		"description": "For those who identify as Straight."
+	},
+	"taken": {
+		"displayname": "Taken",
+		"description": "When you're in a relationship."
 	},
 	"transgender": {
 		"displayname": "Transgender",
