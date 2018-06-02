@@ -22,8 +22,10 @@ client.on('message', message => {
   //Check if the command exists.
   if (command === undefined) return;
   var userPermLevel = 0
-  if (message.member.roles.exists("name", "| • Trial Moderator • |") || message.member.roles.exists("name", "| • Moderator • |") || message.member.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
-  if (message.member.roles.exists("name", "| • Mayor • |") || message.member.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
+  if (message.channel.type === "text") {
+    if (message.member.roles.exists("name", "| • Trial Moderator • |") || message.member.roles.exists("name", "| • Moderator • |") || message.member.roles.exists("name", "| • Administrator • |")) userPermLevel = 1
+    if (message.member.roles.exists("name", "| • Mayor • |") || message.member.roles.exists("name", "| • Co-Mayors • |")) userPermLevel = 2
+};
   if (message.author.id === zen) userPermLevel = 3
   if (message.channel.id === "424197586879250444") {
     message.reply("Bot commands are disabled here.").then(e => setTimeout(function() {
