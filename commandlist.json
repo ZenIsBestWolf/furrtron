@@ -12,7 +12,7 @@
   "chat": {
     "description": "Sends a chat as Furrtron in that channel.",
     "usage": "chat [message]",
-    "permission": 3
+    "permission": 2
   },
   "help": {
     "description": "Shows a list of all the commands. You can also get specific information on one command by adding its name. (Ex. ``.help role``)",

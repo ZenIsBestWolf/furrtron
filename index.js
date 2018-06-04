@@ -44,7 +44,7 @@ client.on('message', message => {
       message.channel.send(aboutBotEmbed)
       break;
     case "chat":
-      if (userPermLevel < 3) {
+      if (userPermLevel < 2) {
         message.reply("You cannot use this command! This command is Level 3. You are Level " + userPermLevel + ".").then(e => setTimeout(function() {
           if (message.channel.type === "text") {
             e.delete();
