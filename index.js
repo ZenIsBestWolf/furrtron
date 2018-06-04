@@ -45,7 +45,7 @@ client.on('message', message => {
       break;
     case "chat":
       if (userPermLevel < 2) {
-        message.reply("You cannot use this command! This command is Level 3. You are Level " + userPermLevel + ".").then(e => setTimeout(function() {
+        message.reply("You cannot use this command! This command is Level 2. You are Level " + userPermLevel + ".").then(e => setTimeout(function() {
           if (message.channel.type === "text") {
             e.delete();
             message.delete();
