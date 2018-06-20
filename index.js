@@ -124,6 +124,9 @@ client.on('message', message => {
       if (args[1].toLowerCase() === "multiple" && args[2]) {
         if (args[2].toLowerCase() === "sonas") calledRole = roleList["multiple sonas"]
       };
+      if (args[1].toLowerCase() === "not" && args[2]) {
+        if (args[2].toLowerCase() === "interested") calledRole = roleList["not interested"]
+      }
       if (calledRole === undefined) {
         message.reply("There is no existing assignable role under that name.").then(e => setTimeout(function() {
           e.delete();
@@ -161,10 +164,10 @@ client.on('message', message => {
       roleEmbed[i + 1] = new Discord.RichEmbed().setTitle('Role List (' + (i + 1) + '/' + rolePages + ')').setDescription('These are all the assignable roles.').setColor(0x876021)
     };
     for (i = 0; Object.keys(roleList).length > i; i++) {
-      if (tempRoleNum < 25) {
+      if (Object.values(roleList)[i].permission === 0 && tempRoleNum < 25) {
         roleEmbed[currentRolePage].addField(Object.values(roleList)[i].displayname, Object.values(roleList)[i].description)
         tempRoleNum++
-      } else if (tempRoleNum >= 24) {
+      } else if (Object.values(roleList)[i].permission === 0 && tempRoleNum >= 24) {
         currentRolePage++
         roleEmbed[currentRolePage].addField(Object.values(roleList)[i].displayname, Object.values(roleList)[i].description)
         tempRoleNum = 1
