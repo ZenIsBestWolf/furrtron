@@ -137,6 +137,33 @@ client.on('message', message => {
         }, 10000));
         return;
       };
+      if (args[2] && userPermLevel > 0) {
+        if (message.mentions.members.first()) {
+          if(!message.mentions.members.first().roles.exists("name", calledRole.displayname)) {
+            message.mentions.members.first().addRole(message.member.guild.roles.find("name", calledRole.displayname))
+            message.reply(":white_check_mark: Role added to " + message.mentions.members.first() + "!").then(e => setTimeout(function() {
+              e.delete();
+              message.delete();
+            }, 10000));
+            return;
+          } else if (message.mentions.members.first().roles.exists("name", calledRole.displayname)) {
+            message.mentions.members.first().removeRole(message.member.guild.roles.find("name", calledRole.displayname))
+            message.reply(":white_check_mark: Role removed from " + message.mentions.members.first() + "!").then(e => setTimeout(function() {
+              e.delete();
+              message.delete();
+            }, 10000));
+            return;
+          };
+        } else {
+          if (args[1].toLowerCase() !== "multiple" && args[1].toLowerCase() !== "original" && args[1].toLowerCase() !== "not") {}
+            message.reply("Error, no mentioned user found.").then(e => setTimeout(function() {
+              e.delete();
+              message.delete();
+            }, 10000));
+            return;
+          };
+        };
+      };
       if (!message.member.roles.exists("name", calledRole.displayname)) {
         message.member.addRole(message.member.guild.roles.find("name", calledRole.displayname))
         message.reply(":white_check_mark: Role added!").then(e => setTimeout(function() {
