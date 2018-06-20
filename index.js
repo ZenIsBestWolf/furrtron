@@ -126,7 +126,10 @@ client.on('message', message => {
       };
       if (args[1].toLowerCase() === "not" && args[2]) {
         if (args[2].toLowerCase() === "interested") calledRole = roleList["not interested"]
-      }
+      };
+      if (args[1].toLowerCase() === "original" && args[2]) {
+        if (args[2].toLowerCase() === "species") calledRole = roleList["original species"]
+      };
       if (calledRole === undefined) {
         message.reply("There is no existing assignable role under that name.").then(e => setTimeout(function() {
           e.delete();
