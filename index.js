@@ -155,7 +155,7 @@ client.on('message', message => {
             return;
           };
         } else {
-          if (args[1].toLowerCase() !== "multiple" && args[1].toLowerCase() !== "original" && args[1].toLowerCase() !== "not") {}
+          if (args[1].toLowerCase() !== "multiple" && args[1].toLowerCase() !== "original" && args[1].toLowerCase() !== "not") {
             message.reply("Error, no mentioned user found.").then(e => setTimeout(function() {
               e.delete();
               message.delete();
