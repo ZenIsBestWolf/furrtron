@@ -1,7 +1,7 @@
 {
 	"amphibians": {
 		"displayname": "Amphibians",
-		"description": "For those whose sonas are Amphibians.",
+		"description": "For people whose sona is an amphibian.",
 		"type": "species"
 	},
 	"agender": {
@@ -21,12 +21,12 @@
 	},
 	"aquatic": {
 		"displayname": "Aquatic",
-		"description": "For those whose sonas are Aquatic.",
+		"description": "For people whose sona is aquatic (mostly lives in the water).",
 		"type": "species"
 	},
 	"artist": {
 		"displayname": "Artist",
-		"description": "For the artists.",
+		"description": "For people who are artists.",
 		"type": "job"
 	},
 	"asexual": {
@@ -36,12 +36,12 @@
 	},
 	"avians": {
 		"displayname": "Avians",
-		"description": "For those whose sonas are Avians (basically birds).",
+		"description": "For people whose sona is an avian or related to avians (Birds).",
 		"type": "species"
 	},
 	"bovines": {
 		"displayname": "Bovines",
-		"description": "For thos ewhose sonas are Bovines (cow and bull like creatures).",
+		"description": "For people whose sona is a bovine (Buffalo, Bison, etc.).",
 		"type": "species"
 	},
 	"bisexual": {
@@ -51,12 +51,12 @@
 	},
 	"canines": {
 		"displayname": "Canines",
-		"description": "For those whose sonas are Canines.",
+		"description": "For people whose sona is a canine (Dogs, doglike).",
 		"type": "species"
 	},
 	"cervines": {
 		"displayname": "Cervines",
-		"description": "For those whose sonas are Cervines (deers and creatures with antlers).",
+		"description": "For people whose sona is a cervine (Deer, deerlike).",
 		"type": "species"
 	},
 	"demons": {
@@ -66,17 +66,17 @@
 	},
 	"developer": {
 		"displayname": "Developer",
-		"description": "For those who do developing (code etc).",
+		"description": "For people who have an interest or field in development.",
 		"type": "job"
 	},
 	"dragons": {
 		"displayname": "Dragons",
-		"description": "For those with Dragon sonas.",
+		"description": "For people whose sona is a dragon (Dragon, dragon-like).",
 		"type": "species"
 	},
 	"equines": {
 		"displayname": "Equines",
-		"description": "For those whose sonas are Equines (horses and hooved creatures).",
+		"description": "For people whose sona is an equine (Horses, horselike).",
 		"type": "species"
 	},
 	"engaged": {
@@ -91,7 +91,7 @@
 	},
 	"felines": {
 		"displayname": "Felines",
-		"description": "For those whose sonas are Felines.",
+		"description": "For people whose sona is a feline (Cat, lion, felinelike).",
 		"type": "species"
 	},
 	"females": {
@@ -106,12 +106,12 @@
 	},
 	"furries": {
 		"displayname": "Furries",
-		"description": "For those who identify as a Furry.",
+		"description": "For people who identify as a furry, are into the furry community, and vice versa.",
 		"type": "misc"
 	},
 	"non-furries": {
 		"displayname": "Non-Furries",
-		"description": "For those who don't identify as a furry, but support furries.",
+		"description": "For people who are not part of the community, do not have a species, and support the community, vice versa.",
 		"type": "misc"
 	},
 	"gay": {
@@ -121,12 +121,12 @@
 	},
 	"hybrids": {
 		"displayname": "Hybrids",
-		"description": "For those whose sonas are a Hybrid of two species.",
+		"description": "For people who have a sona of a combination of two or more species.",
 		"type": "msic"
 	},
 	"lagomorphs": {
 		"displayname": "Lagomorphs",
-		"description": "For those whose sonas are Lagomorphs (rabbit likes creatures).",
+		"description": "For people whose sona is a lagomorph (Rabbit, rabbitlike).",
 		"type": "species"
 	},
 	"lesbian": {
@@ -136,7 +136,7 @@
 	},
 	"lynx": {
 		"displayname": "Lynx",
-		"description": "For those with Lynx sonas.",
+		"description": "For people whose sona is a lynx (Lynx, wild-cat like, etc.).",
 		"type": "species"
 	},
 	"male": {
@@ -151,28 +151,38 @@
 	},
 	"marsupials": {
 		"displayname": "Marsupials",
-		"description": "For those whose sonas are Marsupials (kangaroo like creatures).",
+		"description": "For people whose sona has a common characteristic of having a pouch carrier (Opossums, wombats, etc.).",
 		"type": "species"
+	},
+	"mobile gamer": {
+		"displayname": "Mobile Gamer",
+		"description": "For people who game on a phone.",
+		"type": "misc"
 	},
 	"multiple sonas": {
 		"displayname": "Multiple Sonas",
-		"description": "For those who have multiple sonas (fursonas).",
+		"description": "For people who have multiple fursonas of different or the same species.",
 		"type": "species"
 	},
 	"mustelids": {
 		"displayname": "Mustelids",
-		"description": "For those whose sonas are Mustelids (weasels, badgers, otters and other creatures alike).",
+		"description": "For people whose sona is a mustelid (Weasels, badgers, otters, etc.).",
 		"type": "species"
 	},
 	"mythical": {
 		"displayname": "Mythical",
-		"description": "For those whose sona species are mythical (not real).",
+		"description": "For people whose sona is based off myths or folktales (Legendary, fairy-tale, etc.).",
 		"type": "species"
 	},
 	"not interested": {
 		"displayname": "Not interested",
 		"description": "For those who are just not interested in dating right now.",
 		"type": "relationship"
+	},
+	"nintendo switch": {
+		"displayname": "Nintendo Switch",
+		"description": "For those who game on a Switch.",
+		"type": "console"
 	},
 	"nsfw": {
 		"displayname": "NSFW",
@@ -181,32 +191,62 @@
 	},
 	"oceania": {
 		"displayname": "Oceania",
-		"description": "For those who are located in the Oceania region. (Australia, New Zealend, etc.)",
+		"description": "For those who are located in the Oceania region. (Australia, New Zealend, Melanesia, Micronesia, or Polynesia.)",
 		"type": "location"
 	},
 	"original species": {
 		"displayname": "Original Species",
-		"description": "For thos whose sona species are one of a kind!",
+		"description": "For people who have a self-made or sona species that might not be as popular, such as **angel dragons**, **manokits**, **sergals**, **protogens**, and vice versa.",
 		"type": "species"
+	},
+	"other console": {
+		"displayname": "Other Console",
+		"description": "For those who game on other consoles than the ones we have roles for.",
+		"type": "console"
+	},
+	"overwatch": {
+		"displayname": "Overwatch",
+		"description": "For people who play Overwatch.",
+		"type": "game"
+	},
+	"payday": {
+		"displayname": "PAYDAY",
+		"description": "For people who play PAYDAY: The Heist or PAYDAY 2.",
+		"type": "game"
+	},
+	"pc gamer": {
+		"displayname": "PC Gamer",
+		"description": "For people who game on a PC.",
+		"type": "misc"
+	},
+	"playstation": {
+		"displayname": "PlayStation",
+		"description": "For people who game on a PlayStation.",
+		"type": "console"
 	},
 	"pokefurs": {
 		"displayname": "Pokefurs",
-		"description": "For those whose sonas are based off of characters from the Pokémon franchise.",
+		"description": "For people whose interest or sona is Pokémon related.",
 		"type": "species"
 	},
 	"procyonids": {
 		"displayname": "Procyonids",
-		"description": "For those whose sonas are Procyonids (racoon like creatures).",
+		"description": "For people whose sona is a procynid (Racoons, racoonlike).",
 		"type": "species"
 	},
 	"reptiles": {
 		"displayname": "Reptiles",
-		"description": "For those whose sonas are Reptiles.",
+		"description": "For people whose sona is of a reptile relation (Snakes, lizards, crocodiles, etc.).",
 		"type": "species"
+	},
+	"roblox": {
+		"displayname": "Roblox",
+		"description": "For people who play Roblox.",
+		"type": "game"
 	},
 	"rodents": {
 		"displayname": "Rodents",
-		"description": "For those whose sonas are Rodents.",
+		"description": "For people whose sona is a rodent (Rat, mouse, hamster, etc.).",
 		"type": "species"
 	},
 	"qotd": {
@@ -216,7 +256,7 @@
 	},
 	"sergals": {
 		"displayname": "Sergals",
-		"description": "For those with Sergal sonas.",
+		"description": "For people whose sona is an original species known as Sergal.",
 		"type": "species"
 	},
 	"single": {
@@ -241,17 +281,22 @@
 	},
 	"ursines": {
 		"displayname": "Ursines",
-		"description": "For those whose sonas are Ursines (bear like creatures).",
+		"description": "For people whose sona is of a ursine species (Bears, pandas, etc.).",
 		"type": "species"
 	},
 	"vulpines": {
 		"displayname": "Vulpines",
-		"description": "For those whose sonas are Vulpines (fox like creatures).",
+		"description": "For people whose sona is part of the fox family (Red fox, gray fox, etc.).",
 		"type": "species"
 	},
 	"wolves": {
 		"displayname": "Wolves",
-		"description": "For those with Wolf sonas.",
+		"description": "For people whose sona is a wolf, part of the canine species.",
 		"type": "species"
+	},
+	"xbox": {
+		"displayname": "Xbox",
+		"description": "For people who game/own an Xbox.",
+		"type": "console"
 	}
 }
