@@ -194,10 +194,10 @@ client.on('message', message => {
       roleEmbed[i + 1] = new Discord.RichEmbed().setTitle('Role List (' + (i + 1) + '/' + rolePages + ')').setDescription('These are all the assignable roles.').setColor(0x876021)
     };
     for (i = 0; Object.keys(roleList).length > i; i++) {
-      if (Object.values(roleList)[i].permission === 0 && tempRoleNum < 25) {
+      if (Object.values(roleList)[i] && tempRoleNum < 25) {
         roleEmbed[currentRolePage].addField(Object.values(roleList)[i].displayname, Object.values(roleList)[i].description)
         tempRoleNum++
-      } else if (Object.values(roleList)[i].permission === 0 && tempRoleNum >= 24) {
+      } else if (Object.values(roleList)[i] && tempRoleNum >= 24) {
         currentRolePage++
         roleEmbed[currentRolePage].addField(Object.values(roleList)[i].displayname, Object.values(roleList)[i].description)
         tempRoleNum = 1
