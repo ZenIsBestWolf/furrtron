@@ -99,8 +99,8 @@
 		"description": "For people whose sona is a feline (Cat, lion, felinelike).",
 		"type": "species"
 	},
-	"females": {
-		"displayname": "Females",
+	"female": {
+		"displayname": "Female",
 		"description": "For those who identify as Female.",
 		"type": "gender"
 	},
