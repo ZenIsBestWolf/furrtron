@@ -39,15 +39,20 @@
 		"description": "For people whose sona is an avian or related to avians (Birds).",
 		"type": "species"
 	},
-	"bovines": {
-		"displayname": "Bovines",
-		"description": "For people whose sona is a bovine (Buffalo, Bison, etc.).",
-		"type": "species"
-	},
 	"bisexual": {
 		"displayname": "Bisexual",
 		"description": "For those who identify as Bisexual.",
 		"type": "sexuality"
+	},
+	"blue": {
+		"displayname": "Blue",
+		"description": "Have your name be the color Blue",
+		"type": "color"
+	},
+	"bovines": {
+		"displayname": "Bovines",
+		"description": "For people whose sona is a bovine (Buffalo, Bison, etc.).",
+		"type": "species"
 	},
 	"canines": {
 		"displayname": "Canines",
@@ -109,6 +114,11 @@
 		"description": "Males who are more effimate.",
 		"type": "misc"
 	},
+	"fortnite": {
+		"displayname": "Fortnite",
+		"description": "For people who play Fortnite.",
+		"type": "game"
+	},
 	"forza": {
 		"displayname": "Forza",
 		"description": "For people who play Forza.",
@@ -128,6 +138,11 @@
 		"displayname": "Gay",
 		"description": "For those who identify as Gay.",
 		"type": "sexuality"
+	},
+	"green": {
+		"displayname": "Green",
+		"description": "Have your name be the color Green.",
+		"type": "color"
 	},
 	"gta": {
 		"displayname": "GTA",
@@ -174,6 +189,11 @@
 		"description": "For people whose sona has a common characteristic of having a pouch carrier (Opossums, wombats, etc.).",
 		"type": "species"
 	},
+	"minecraft": {
+		"displayname": "Minecraft",
+		"description": "For people who play Minecraft.",
+		"type": "game"
+	},
 	"mobile gamer": {
 		"displayname": "Mobile Gamer",
 		"description": "For people who game on a phone.",
@@ -214,10 +234,19 @@
 		"description": "For those who are located in the Oceania region. (Australia, New Zealend, Melanesia, Micronesia, or Polynesia.)",
 		"type": "location"
 	},
+	"orange": {
+		"displayname": "Orange",
+		"description": "Have your name be the color Orange."
+	},
 	"original species": {
 		"displayname": "Original Species",
 		"description": "For people who have a self-made or sona species that might not be as popular, such as **angel dragons**, **manokits**, **sergals**, **protogens**, and vice versa.",
 		"type": "species"
+	},
+	"osu": {
+		"displayname": "osu",
+		"description": "For people who play osu!",
+		"type": "game"
 	},
 	"other console": {
 		"displayname": "Other Console",
@@ -239,6 +268,11 @@
 		"description": "For people who game on a PC.",
 		"type": "misc"
 	},
+	"pink": {
+		"displayname": "Pink",
+		"description": "Have your name be the color Pink.",
+		"type": "color"
+	},
 	"playstation": {
 		"displayname": "PlayStation",
 		"description": "For people who game on a PlayStation.",
@@ -253,6 +287,16 @@
 		"displayname": "Procyonids",
 		"description": "For people whose sona is a procynid (Racoons, racoonlike).",
 		"type": "species"
+	},
+	"purple": {
+		"displayname": "Purple",
+		"description": "Have your name be the color Purple.",
+		"type": "color"
+	},
+	"red": {
+		"displayname": "Red",
+		"description": "Have your name be the color Red.",
+		"type": "color"
 	},
 	"reptiles": {
 		"displayname": "Reptiles",
@@ -322,5 +366,10 @@
 		"displayname": "Xbox",
 		"description": "For people who game/own an Xbox.",
 		"type": "console"
+	},
+	"yellow": {
+		"displayname": "Yellow",
+		"description": "Have your name be the color Yellow.",
+		"type": "color"
 	}
 }
