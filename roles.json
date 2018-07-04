@@ -59,6 +59,11 @@
 		"description": "For people whose sona is a cervine (Deer, deerlike).",
 		"type": "species"
 	},
+	"cod": {
+		"displayname": "CoD",
+		"description": "For people who play Call of Duty.",
+		"type": "game"
+	},
 	"demons": {
 		"displayname": "Demons",
 		"description": "'The quintessential of 'bad' or 'naughty''. - Lolita",
@@ -104,6 +109,11 @@
 		"description": "Males who are more effimate.",
 		"type": "misc"
 	},
+	"forza": {
+		"displayname": "Forza",
+		"description": "For people who play Forza.",
+		"type": "game"
+	},
 	"furries": {
 		"displayname": "Furries",
 		"description": "For people who identify as a furry, are into the furry community, and vice versa.",
@@ -119,6 +129,11 @@
 		"description": "For those who identify as Gay.",
 		"type": "sexuality"
 	},
+	"gta": {
+		"displayname": "GTA",
+		"description": "For people who play GTA.",
+		"type": "game"
+	},
 	"hybrids": {
 		"displayname": "Hybrids",
 		"description": "For people who have a sona of a combination of two or more species.",
@@ -133,6 +148,11 @@
 		"displayname": "Lesbian",
 		"description": "For those who identify as Lesbian.",
 		"type": "sexuality"
+	},
+	"lol": {
+		"displayname": "LoL",
+		"description": "For people who play League of Legends.",
+		"type": "game"
 	},
 	"lynx": {
 		"displayname": "Lynx",
@@ -243,6 +263,10 @@
 		"displayname": "Roblox",
 		"description": "For people who play Roblox.",
 		"type": "game"
+	},
+	"rocket league": {
+		"displayname": "Rocket League",
+		"description": "For people who play Rocket League."
 	},
 	"rodents": {
 		"displayname": "Rodents",
