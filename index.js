@@ -142,6 +142,9 @@ client.on('message', message => {
 			if (args[1].toLowerCase() === "other" && args[2]) {
 				if (args[2].toLowerCase() === "console") calledRole = roleList["other console"]
 			};
+			if (args[1].toLowerCase() === "dark" && args[2]) {
+				if (args[2].toLowerCase() === "blue") calledRole = roleList["dark blue"]
+			};
 			if (args[1].toLowerCase() === "grand" && args[2]) {
 				if (args[2].toLowerCase() === "theft" && args[3]) {
 					if (args[3].toLowerCase() == "auto") calledRole = roleList["gta"]
@@ -158,7 +161,8 @@ client.on('message', message => {
 				};
 			};
 			if (calledRole === "ow") calledRole = "overwatch";
-			if (calledRole === "ps") calledRole = "playstation"
+			if (calledRole === "ps") calledRole = "playstation";
+			if (calledRole === "grey") calledRole = "gray";
 			if (calledRole === undefined) {
 				message.reply("There is no existing assignable role under that name.").then(e => setTimeout(function() {
 					e.delete();

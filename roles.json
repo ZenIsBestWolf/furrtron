@@ -44,15 +44,25 @@
 		"description": "For those who identify as Bisexual.",
 		"type": "sexuality"
 	},
+	"black": {
+		"displayname": "Black",
+		"description": "Have your name be the color Black.",
+		"type": "color"
+	},
 	"blue": {
 		"displayname": "Blue",
-		"description": "Have your name be the color Blue",
+		"description": "Have your name be the color Blue.",
 		"type": "color"
 	},
 	"bovines": {
 		"displayname": "Bovines",
 		"description": "For people whose sona is a bovine (Buffalo, Bison, etc.).",
 		"type": "species"
+	},
+	"brown": {
+		"displayname": "Brown",
+		"description": "Have your name be the color Brown.",
+		"type": "color"
 	},
 	"canines": {
 		"displayname": "Canines",
@@ -68,6 +78,16 @@
 		"displayname": "CoD",
 		"description": "For people who play Call of Duty.",
 		"type": "game"
+	},
+	"cyan": {
+		"displayname": "Cyan",
+		"description": "Have your name be the color Cyan.",
+		"type": "color"
+	},
+	"dark blue": {
+		"displayname": "Dark Blue",
+		"description": "Have your name be the color Dark Blue.",
+		"type": "color"
 	},
 	"demons": {
 		"displayname": "Demons",
@@ -139,6 +159,11 @@
 		"description": "For those who identify as Gay.",
 		"type": "sexuality"
 	},
+	"gray": {
+		"displayname": "Gray",
+		"description": "Have your name be the color Gray/Grey.",
+		"type": "color"
+	},
 	"green": {
 		"displayname": "Green",
 		"description": "Have your name be the color Green.",
@@ -173,6 +198,11 @@
 		"displayname": "Lynx",
 		"description": "For people whose sona is a lynx (Lynx, wild-cat like, etc.).",
 		"type": "species"
+	},
+	"magenta": {
+		"displayname": "Magenta",
+		"description": "Have your name be the color Magenta.",
+		"type": "color"
 	},
 	"male": {
 		"displayname": "Male",
@@ -267,6 +297,11 @@
 		"displayname": "PC Gamer",
 		"description": "For people who game on a PC.",
 		"type": "misc"
+	},
+	"peach": {
+		"displayname": "Peach",
+		"description": "Have your name be the color Peach.",
+		"type": "color"
 	},
 	"pink": {
 		"displayname": "Pink",
