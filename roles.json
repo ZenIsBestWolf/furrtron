@@ -147,12 +147,12 @@
 	"furries": {
 		"displayname": "Furries",
 		"description": "For people who identify as a furry, are into the furry community, and vice versa.",
-		"type": "misc"
+		"type": "furry"
 	},
 	"non-furries": {
 		"displayname": "Non-Furries",
 		"description": "For people who are not part of the community, do not have a species, and support the community, vice versa.",
-		"type": "misc"
+		"type": "furry"
 	},
 	"gay": {
 		"displayname": "Gay",
@@ -177,7 +177,7 @@
 	"hybrids": {
 		"displayname": "Hybrids",
 		"description": "For people who have a sona of a combination of two or more species.",
-		"type": "msic"
+		"type": "misc"
 	},
 	"lagomorphs": {
 		"displayname": "Lagomorphs",
@@ -266,7 +266,8 @@
 	},
 	"orange": {
 		"displayname": "Orange",
-		"description": "Have your name be the color Orange."
+		"description": "Have your name be the color Orange.",
+		"type": "color"
 	},
 	"original species": {
 		"displayname": "Original Species",
@@ -345,7 +346,8 @@
 	},
 	"rocket league": {
 		"displayname": "Rocket League",
-		"description": "For people who play Rocket League."
+		"description": "For people who play Rocket League.",
+		"type": "game"
 	},
 	"rodents": {
 		"displayname": "Rodents",
