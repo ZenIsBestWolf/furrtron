@@ -27,7 +27,7 @@ client.on('message', message => {
 		if (message.member.roles.exists("name", "Mayor") || message.member.roles.exists("name", "Co-Mayor")) userPermLevel = 2
 	};
 	if (message.author.id === zen) userPermLevel = 3
-	if (message.channel.id === "424197586879250444") {
+	if (message.channel.id === "424197586879250444" && !message.author.id === zen) {
 		message.reply("Bot commands are disabled here.").then(e => setTimeout(function() {
 			e.delete();
 			message.delete();
@@ -65,7 +65,7 @@ client.on('message', message => {
 						if (message.channel.type === "text") {
 							e.delete();
 							message.delete();
-						}
+						};
 					}, 10000));
 					return;
 				};
@@ -105,6 +105,32 @@ client.on('message', message => {
 			};
 			for (i = 0; i < helpPages; i++) {
 				message.author.send(helpEmbed[i + 1])
+			};
+			message.delete();
+			break;
+		case "override":
+			if (userPermLevel < 3) {
+				message.reply("You cannot use this command! This command is Level 3. You are level " + userPermLevel + ".").then(e => setTimeout(function() {
+					if (message.channel.type === "text") {
+						e.delete();
+						message.delete();
+					};
+				}, 10000));
+				return;
+			};
+			switch (args[1].toLowerCase()) {
+				case "selfaddrole":
+					var selfCalledAddRole = args.join(' ').slice(args[0].length + args[1].length + 2)
+					message.member.addRole(message.member.guild.roles.find("name", selfCalledAddRole)).catch(err => {
+						console.log("An error occcured. This is likely from the role not existing, me not having permission to add roles, the role is above me, or already having the role.")
+					});
+					break;
+				case "selfremoverole":
+					var selfCalledRemoveRole = args.join(' ').slice(args[0].length + args[1].length + 2)
+					message.member.removeRole(message.member.guild.roles.find("name", selfCalledRemoveRole)).catch(err => {
+						console.log("An error occcured. This is likely from the role not existing, me not having permission to add roles, the role is above me, or already having the role.")
+					})
+					break;
 			};
 			message.delete();
 			break;

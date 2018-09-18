@@ -19,10 +19,10 @@
     "usage": "help [command]",
     "permission": 0
   },
-  "modmail": {
-    "description": "Send a message to all of staff. **Abuse of this may be punishable.**",
-    "usage": "modmail [message]",
-    "permission": 0
+  "override": {
+    "description": "Developer functions.",
+    "usage": "override [args]",
+    "permission": 3
   },
   "role": {
     "description": "Add or remove a role.",
