@@ -149,8 +149,8 @@
 		"description": "For people who identify as a furry, are into the furry community, and vice versa.",
 		"type": "furry"
 	},
-	"non-furries": {
-		"displayname": "Non-Furries",
+	"non-furry": {
+		"displayname": "Non-Furry",
 		"description": "For people who are not part of the community, do not have a species, and support the community, vice versa.",
 		"type": "furry"
 	},
@@ -213,6 +213,11 @@
 		"displayname": "Married",
 		"description": "For those who are married.",
 		"type": "relationship"
+	},
+	"maroon": {
+		"displayname": "Maroon",
+		"description": "Have your name be the color Maroon.",
+		"type": "Color"
 	},
 	"marsupials": {
 		"displayname": "Marsupials",
@@ -289,6 +294,11 @@
 		"description": "For people who play Overwatch.",
 		"type": "game"
 	},
+	"pansexual": {
+		"displayname": "Pansexual",
+		"description": "For those who identify as Pansexual.",
+		"type": "sexuality"
+	},
 	"payday": {
 		"displayname": "PAYDAY",
 		"description": "For people who play PAYDAY: The Heist or PAYDAY 2.",
@@ -353,11 +363,6 @@
 		"displayname": "Rodents",
 		"description": "For people whose sona is a rodent (Rat, mouse, hamster, etc.).",
 		"type": "species"
-	},
-	"qotd": {
-		"displayname": "QOTD",
-		"description": "For those who want to recieve QOTD pings.",
-		"type": "misc"
 	},
 	"sergals": {
 		"displayname": "Sergals",
