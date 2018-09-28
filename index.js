@@ -272,7 +272,7 @@ client.on('message', message => {
 			if (message.channel.type === "text") message.delete();
 			break;
 		case "wipe":
-			if (userPermLevel > 1) {
+			if (userPermLevel < 1) {
 				message.reply("You cannot use this command! This command is level 1. You are level 0.").then(e => setTimeout(function() {
 					if (message.channel.type === "text") {
 						e.delete();
