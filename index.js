@@ -290,7 +290,10 @@ client.on('message', message => {
 			message.channel.fetchMessages({
 				after: "495033562610008065"
 			}).then(messages => {
-				message.channel.bulkDelete(messages);
+				var runCount = Math.ceil(messages.size/100)
+				for (i = 0; runCount > i; i++) {
+					message.channel.bulkDelete(messages)
+				}
 			});
 			break;
 	};
