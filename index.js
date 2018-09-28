@@ -271,6 +271,28 @@ client.on('message', message => {
 			};
 			if (message.channel.type === "text") message.delete();
 			break;
+		case "wipe":
+			if (userPermLevel > 1) {
+				message.reply("You cannot use this command! This command is level 1. You are level 0.").then(e => setTimeout(function() {
+					if (message.channel.type === "text") {
+						e.delete();
+					};
+				}, 10000));
+				return;
+			};
+			if (message.channel.id != "495030535626686489") {
+				message.reply("That command is only available in <#495030535626686489>.").then(e => setTimeout(function() {
+					if (message.channel.type === "text") {
+						e.delete();
+					};
+				}, 10000));
+			};
+			message.channel.fetchMessages({
+				after: "495033562610008065"
+			}).then(messages => {
+				message.channel.bulkDelete(messages);
+			});
+			break;
 	};
 });
 //Login to Discord.

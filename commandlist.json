@@ -33,5 +33,10 @@
     "description": "A list of all the roles, including their descriptions.",
     "usage": "rolelist",
     "permission": 0
+  },
+  "wipe": {
+    "description": "Wipe the intro channel.",
+    "usage": "wipe",
+    "permission": 1
   }
 }
