@@ -144,7 +144,7 @@
 		"description": "For people who play Forza.",
 		"type": "game"
 	},
-	"furries": {
+	"furry": {
 		"displayname": "Furries",
 		"description": "For people who identify as a furry, are into the furry community, and vice versa.",
 		"type": "furry"
