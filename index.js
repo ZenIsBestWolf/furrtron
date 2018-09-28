@@ -263,7 +263,7 @@ client.on('message', message => {
 				};
 			};
 			for (i = 0; i < rolePages; i++) {
-				if (message.channel.id === "424020950837886998" || message.channel.id === "424231304557756426") {
+				if (message.channel.id === "445660928521011201") {
 					message.channel.send(roleEmbed[i + 1])
 				} else {
 					message.author.send(roleEmbed[i + 1])
