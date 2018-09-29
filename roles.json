@@ -14,8 +14,8 @@
 		"description": "For those located in the Americas. (North, Central, and South America.)",
 		"type": "location"
 	},
-	"angles": {
-		"displayname": "Angles",
+	"angels": {
+		"displayname": "Angels",
 		"description": "'The quintessential to 'good' or 'nice''. - Lolita",
 		"type": "misc"
 	},
