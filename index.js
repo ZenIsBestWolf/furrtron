@@ -288,7 +288,7 @@ client.on('message', message => {
 				}, 10000));
 			};
 			message.channel.fetchMessages({
-				after: "495033562610008065"
+				after: "495387422524440605"
 			}).then(messages => {
 				var runCount = Math.ceil(messages.size/100)
 				for (i = 0; runCount > i; i++) {
