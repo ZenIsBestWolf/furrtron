@@ -5,12 +5,21 @@ const client = new Discord.Client();
 const roleList = require("./roles.json");
 const commandList = require("./commandlist.json")
 var token = process.env.TOKEN
+var errorCount = 0
 //Startup
 client.on('ready', () => {
 	console.log('Online and ready to go! Bot running with prefix ' + prefix);
-	client.user.setActivity('being fuzzy. | Prefix is ' + prefix);
+	client.user.setActivity('RESTARTED! THIS WILL CLEAR!').then(e => setTimeout(function() {
+		client.user.setActivity('being fuzzy. | 0 errors have occurred.')
+	}, 10000));
 });
-process.on('unhandledRejection', console.error);
+process.on('unhandledRejection', error => {
+	console.log(error)
+	errorCount++
+	client.user.setActivity('UHR OCCURRED CHECK LOGS').then(e => setTimeout(function() {
+		client.user.setActivity('being fuzzy. | ' + errorCount + ' errors have occurred.');
+	}, 10000));
+});
 //Variables
 var prefix = ".";
 var zen = "183672121522782208";
