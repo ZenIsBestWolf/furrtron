@@ -259,11 +259,6 @@
 		"description": "For those who game on a Switch.",
 		"type": "console"
 	},
-	"nsfw": {
-		"displayname": "NSFW",
-		"description": "Access to the 18+ channels.",
-		"type": "misc"
-	},
 	"oceania": {
 		"displayname": "Oceania",
 		"description": "For those who are located in the Oceania region. (Australia, New Zealend, Melanesia, Micronesia, or Polynesia.)",
