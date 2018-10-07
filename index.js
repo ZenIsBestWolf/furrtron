@@ -1,7 +1,7 @@
 //Documentation done by ZenIsBestWolf. (The developer.)
 //Imports
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({disableEveryone: true});
 const roleList = require("./roles.json");
 const commandList = require("./commandlist.json")
 var token = process.env.TOKEN
@@ -14,7 +14,7 @@ client.on('ready', () => {
 	}, 10000));
 });
 process.on('unhandledRejection', error => {
-	console.log(error)
+	console.log(error.stack)
 	errorCount++
 	client.user.setActivity('UHR OCCURRED CHECK LOGS').then(e => setTimeout(function() {
 		client.user.setActivity('being fuzzy. | ' + errorCount + ' errors have occurred.');
